@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rapid Income Blueprint | Video Library</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background:#f5f7fa;
+      margin:0;
+      padding:0;
+      color:#222;
+    }
+    .container{
+      max-width: 1000px;
+      margin:auto;
+      padding: 40px 20px;
+    }
+    .brand{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom: 10px;
+    }
+    .brand h1{
+      font-size: 32px;
+      margin: 0;
+    }
+    .brand .tag{
+      font-size: 14px;
+      color:#555;
+      background:#e9eef6;
+      padding:6px 10px;
+      border-radius: 999px;
+    }
+    .sub{
+      color:#444;
+      margin-top: 8px;
+      margin-bottom: 22px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .notice{
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:10px;
+      padding:14px 16px;
+      margin: 18px 0 26px;
+      font-size: 14px;
+      color:#333;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    @media (max-width: 900px){
+      .grid{ grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px){
+      .grid{ grid-template-columns: 1fr; }
+    }
+    .card{
+      background:#fff;
+      border:1px solid #e5e7eb;
+      border-radius:12px;
+      overflow:hidden;
+      text-decoration:none;
+      color:inherit;
+      display:block;
+      transition: transform .08s ease-in-out;
+    }
+    .card:hover{ transform: translateY(-2px); }
+    .thumb{
+      width:100%;
+      display:block;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      background:#dbe7f7;
+    }
+    .content{
+      padding: 14px 14px 16px;
+    }
+    .title{
+      margin:0 0 6px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+    .desc{
+      margin:0;
+      color:#555;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    .top-actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top: 12px;
+      margin-bottom: 14px;
+    }
+    .btn{
+      display:inline-block;
+      background:#1e88e5;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-size:14px;
+    }
+    .btn.secondary{
+      background:#e9eef6;
+      color:#1f2937;
+    }
+    .footer{
+      margin-top: 28px;
+      color:#6b7280;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="brand">
+      <h1>Rapid Income Blueprint</h1>
+      <span class="tag">Video Library</span>
+    </div>
+
+    <p class="sub">
+      Welcome. Below are your training videos. Click any thumbnail to watch.
+    </p>
+
+    <div class="top-actions">
+      <a class="btn secondary" href="thank-you.html">Back to Access Page</a>
+      <a class="btn" href="https://rapidincomeblueprint.com">Back to Main Site</a>
+    </div>
+
+    <div class="notice">
+      Tip: Bookmark this page so you can return anytime.
+    </div>
+
+    <div class="grid">
+
+      <!-- VIDEO 1 (NEW FIRST VIDEO) -->
+      <a class="card" href="https://www.youtube.com/watch?v=bQ2PVOqiSJ4" target="_blank" rel="noopener">
+        <img class="thumb" src="https://img.youtube.com/vi/bQ2PVOqiSJ4/hqdefault.jpg" alt="Using Affiliates to Make Money thumbnail">
+        <div class="content">
+          <h3 class="title">Using Affiliates to Make Money</h3>
+          <p class="desc">A clear, beginner-friendly explanation of affiliate marketing and how to use it responsibly.</p>
+        </div>
+      </a>
+
+      <!-- VIDEO 2 -->
+      <a class="card" href="https://www.youtube.com/watch?v=NZ6bW1NNtP0" target="_blank" rel="noopener">
+        <img class="thumb" src="https://img.youtube.com/vi/NZ6bW1NNtP0/hqdefault.jpg" alt="How to Create an Online Store thumbnail">
+        <div class="content">
+          <h3 class="title">How to Create an Online Store</h3>
+          <p class="desc">A beginner-friendly walkthrough showing how to create a simple online store from scratch.</p>
+        </div>
+      </a>
+
+      <!-- Add more videos below by copying one of the blocks above -->
+
+    </div>
+
+    <div class="footer">
+      © <span id="year"></span> Rapid Income Blueprint • All training delivered digitally
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
